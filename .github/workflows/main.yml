@@ -34,6 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: Hello World action example by deepakgc
-        uses: deepak-gc/custom-github-action@v1.2
+      - name: Daily Marvel Fact - README
+        uses: APratham/funfact-daily-readme@v2.0
+
 
