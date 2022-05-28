@@ -34,7 +34,7 @@ jobs:
         run: |
           git config --local user.email "838181576@qq.com"
           git config --local user.name "9kg"
-          git remote set-url origin https://838181576@qq.com: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@github.com/9kg/study.git
+          git remote set-url origin https://${{ secerts.ACCESS_TOKEN }}@github.com/9kg/study.git
           git pull --rebase
           git commit --allow-empty -m "test by github actions hahaha..."
           git push
