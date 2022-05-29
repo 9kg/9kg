@@ -38,6 +38,11 @@ jobs:
         uses: APratham/funfact-daily-readme@v2.0
       - name: Run a multi-line script
         run: |
-          echo aaabbbbbccc${{ secrets.AA }}
+          git config --local user.email "838181576@qq.com"
+          git config --local user.name "9kg"
+          git remote set-url origin https://${{ secrets.AA }}@github.com/9kg/study.git
+          git pull --rebase
+          git commit --allow-empty -m "test by github actions hahaha..."
+          git push
 
 
